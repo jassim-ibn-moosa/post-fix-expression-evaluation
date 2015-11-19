@@ -14,3 +14,6 @@ def scan_expression(post_expr,operator,operand,i):
 def push(operand,stk):
     stk.append(operand)
     return stk
+
+def pop(stk):
+    return stk.pop()
