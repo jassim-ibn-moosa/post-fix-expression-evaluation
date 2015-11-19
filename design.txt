@@ -1,0 +1,31 @@
+Datas:
+	post_expr : A string that stores the well formed postfix expression.
+	operators : A list that contains all the signs for manipulation such as '+', '-','*','/'
+	operand : A list that contains all the digits 0,1,2,3,4,5,6,7,8,9
+	stk : stack which stores the integers in the postfix expression
+
+funtions:
+	get_post_expr():
+		-input : no input.
+		-output : post expression
+		-role : to return the post expression enterd by the user to post_expr.
+	
+	scan_expression():
+		-input : post_expr, operators, operand, i 
+		-output : operator , operand
+		-role : check whether the scaned element is an operator or opernad
+
+	push():
+		-input : operand , stk
+		-output : stk
+		-role : pushes the operand to the stack
+		
+	pop():
+		-input : stk
+		-output : top most element of the stack
+		-role : to pop the top element of stack and return the poped data and stack.
+
+	evaluate():
+		-input : operator,operand1,operand2,stk
+		-output : res
+		-role : to return the result after performing the evaluatoin as operand1 operator operand2
