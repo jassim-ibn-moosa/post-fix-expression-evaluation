@@ -10,3 +10,7 @@ def scan_expression(post_expr,operator,operand,i):
     else:
         operand = post_expr[i]
         return operand
+
+def push(operand,stk):
+    stk.append(operand)
+    return stk
