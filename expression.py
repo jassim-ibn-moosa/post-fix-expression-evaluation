@@ -17,3 +17,14 @@ def push(operand,stk):
 
 def pop(stk):
     return stk.pop()
+
+def evaluate(operator,operand1,operand2,stk):
+    if operator == '+':
+        res = operand1 + operand2
+    elif operator == '-':
+        res = operand1 - operand2
+    elif operator == '*':
+        res = operand1 * operand2
+    elif operator == '/':
+        res = operand1 / operand2
+    return res
